@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Merchandise_View</class>
+ <widget class="QDialog" name="Merchandise_View">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>306</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>View Merchandise</string>
+  </property>
+  <widget class="QPushButton" name="ViewMerchandise_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="MerchandiseView_RefreshTableButton">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>260</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Albums_MainMenuText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Merchandise</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="MerchandiseView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>551</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Album ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Album Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Publish Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Key Words</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Comments</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ViewMerchandise_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Merchandise_View</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MerchandiseView_RefreshTableButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Merchandise_View</receiver>
+   <slot>RefreshMerchandise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>499</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>496</x>
+     <y>639</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>RefreshMerchandise()</slot>
+ </slots>
+</ui>

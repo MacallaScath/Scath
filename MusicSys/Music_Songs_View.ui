@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Music_Songs_View</class>
+ <widget class="QDialog" name="Music_Songs_View">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>View Songs</string>
+  </property>
+  <widget class="QTableWidget" name="SongsView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>531</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Song ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Song Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Published</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Key Words</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Comments</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="SongsView_RefreshTableButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>300</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Music_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Albums_MainMenuText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>571</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Songs</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Music_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Songs_View</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SongsView_RefreshTableButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Songs_View</receiver>
+   <slot>RefreshSongs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>498</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>RefreshSongs()</slot>
+ </slots>
+</ui>

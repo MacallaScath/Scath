@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Music_Albums_View</class>
+ <widget class="QDialog" name="Music_Albums_View">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Album View</string>
+  </property>
+  <widget class="QTableWidget" name="AlbumsView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>541</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Album ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Album Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Publish Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Key Words</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Comments</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="AlbumsView_RefreshTableButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>310</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Albums_MainMenuText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Albums</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ViewAlbums_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>AlbumsView_RefreshTableButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Albums_View</receiver>
+   <slot>RefreshAlbums()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>314</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>357</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ViewAlbums_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Albums_View</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>RefreshAlbums()</slot>
+ </slots>
+</ui>

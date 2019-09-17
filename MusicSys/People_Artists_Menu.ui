@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>People_Artists_Menu</class>
+ <widget class="QDialog" name="People_Artists_Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>211</width>
+    <height>253</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Artists Menu</string>
+  </property>
+  <widget class="QPushButton" name="Artists_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>230</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StaffMenu_Logo">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>10</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Staff_MenuText">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>80</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Artists</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>171</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="Artists_ViewButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>View Artists</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Artists_AddButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add Artist</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Artists_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Artists_Menu</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>61</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Artists_AddButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Artists_Menu</receiver>
+   <slot>AddArtistButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>336</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Artists_ViewButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Artists_Menu</receiver>
+   <slot>ViewArtistsButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>AddArtistButton()</slot>
+  <slot>ViewArtistsButton()</slot>
+ </slots>
+</ui>

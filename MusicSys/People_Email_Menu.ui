@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>People_Email_Menu</class>
+ <widget class="QDialog" name="People_Email_Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>231</width>
+    <height>263</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Emails Menu</string>
+  </property>
+  <widget class="QPushButton" name="Emails_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EmailMenu_TitleText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Emails</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>171</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="Emails_AddButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add Email</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Emails_SendButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Send Email</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>Emails_BackButton</zorder>
+  <zorder>EmailMenu_TitleText</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>Emails_AddButton</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Emails_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Email_Menu</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Emails_SendButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Email_Menu</receiver>
+   <slot>SendEmailButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Emails_AddButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Email_Menu</receiver>
+   <slot>AddEmailButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>171</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>AddEmailButton()</slot>
+  <slot>SendEmailButton()</slot>
+ </slots>
+</ui>

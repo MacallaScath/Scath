@@ -1,0 +1,90 @@
+<!DOCTYPE XUPProject>
+<!--
+###########################################################################################
+##      Created using Monkey Studio IDE v1.9.0.4 (1.9.0.4)
+##
+##  Author    : Paddy MacCourt
+##  Project   : Music System
+##  FileName  : Music System.xpythonqt
+##  Date      : 2015-09-29T13:32:57
+##  License   : $License$
+##  Comment   : $Comment$
+##  Home Page : $Home Page$
+##
+##  This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+##  WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+##
+###########################################################################################
+-->
+<project version="1.1.0" name="Music System">
+    <variable name="XUP.MAIN_FILE">
+        <value>main.py</value>
+    </variable>
+    <variable name="FORMS">
+        <file>mainwindow.ui</file>
+        <file>Merchandise_Menu.ui</file>
+        <file>Music_Menu.ui</file>
+        <file>People_Menu.ui</file>
+        <file>Music_Albums_Main.ui</file>
+        <file>Music_Albums_Add.ui</file>
+        <file>Music_Songs_Add.ui</file>
+        <file>Music_Songs_Main.ui</file>
+        <file>Music_Podcasts_Main.ui</file>
+        <file>Music_Podcasts_Add.ui</file>
+        <file>Music_Albums_View.ui</file>
+        <file>Music_Songs_View.ui</file>
+        <file>Music_Podcasts_View.ui</file>
+        <file>People_Staff_Menu.ui</file>
+        <file>People_Artists_Menu.ui</file>
+        <file>Validation.ui</file>
+        <file>Music_Albums_Search.ui</file>
+        <file>Music_Albums_Sales.ui</file>
+        <file>People_Email_Menu.ui</file>
+        <file>People_Email_Add.ui</file>
+        <file>People_Email_Send.ui</file>
+        <file>Music_Songs_Search.ui</file>
+        <file>People_Staff_View.ui</file>
+        <file>People_Staff_Add.ui</file>
+        <file>Music_Songs_Sales.ui</file>
+        <file>People_Artists_View.ui</file>
+        <file>People_Artists_Add.ui</file>
+        <file>Merchandise_Add.ui</file>
+        <file>Merchandise_View.ui</file>
+        <file>Merchandise_Sales.ui</file>
+        <file>Merchandise_Search.ui</file>
+    </variable>
+    <variable name="PYTHON_FILES">
+        <file>main.py</file>
+        <file>mainwindow.py</file>
+        <file>Merchandise_Menu.py</file>
+        <file>Music_Menu.py</file>
+        <file>People_Menu.py</file>
+        <file>Music_Albums_Main.py</file>
+        <file>Music_Albums_Add.py</file>
+        <file>Music_Songs_Add.py</file>
+        <file>Music_Songs_Main.py</file>
+        <file>Music_Podcasts_Main.py</file>
+        <file>Music_Podcasts_Add.py</file>
+        <file>Music_Albums_View.py</file>
+        <file>Music_Songs_View.py</file>
+        <file>Music_Podcasts_View.py</file>
+        <file>People_Staff_Menu.py</file>
+        <file>People_Artists_Menu.py</file>
+        <file>Validation.py</file>
+        <file>Music_Albums_Search.py</file>
+        <file>Music_Albums_Sales.py</file>
+        <file>People_Email_Menu.py</file>
+        <file>People_Email_Add.py</file>
+        <file>People_Email_Send.py</file>
+        <file>Music_Songs_Search.py</file>
+        <file>People_Staff_View.py</file>
+        <file>People_Staff_Add.py</file>
+        <file>Music_Songs_Sales.py</file>
+        <file>People_Artists_View.py</file>
+        <file>People_Artists_Add.py</file>
+        <file>Merchandise_Add.py</file>
+        <file>Merchandise_View.py</file>
+        <file>Merchandise_Sales.py</file>
+        <file>Merchandise_Search.py</file>
+    </variable>
+</project>

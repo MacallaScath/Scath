@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>People_Artists_View</class>
+ <widget class="QDialog" name="People_Artists_View">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>View Artists</string>
+  </property>
+  <widget class="QPushButton" name="ViewArtists_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="ArtistsView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>541</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Album ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Album Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Publish Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Key Words</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Comments</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="ArtistsView_RefreshTableButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>310</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Albums_MainMenuText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Artists</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ViewArtists_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Artists_View</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ArtistsView_RefreshTableButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Artists_View</receiver>
+   <slot>RefreshArtists()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>519</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>511</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>RefreshArtists()</slot>
+ </slots>
+</ui>

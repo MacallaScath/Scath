@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Music_Menu</class>
+ <widget class="QDialog" name="Music_Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Music Menu</string>
+  </property>
+  <widget class="QLabel" name="Music_MainMenuText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>401</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Music</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>321</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="Music_AlbumsButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Albums</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Music_SongsButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Songs</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Music_PodcastsButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Podcasts</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="Music_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Music_Logo">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Music_AlbumsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Menu</receiver>
+   <slot>AlbumsMainButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>140</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Music_SongsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Menu</receiver>
+   <slot>SongsMainButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>231</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Music_PodcastsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Menu</receiver>
+   <slot>PodcastsMainButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Music_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Menu</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>42</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>AlbumsMainButton()</slot>
+  <slot>SongsMainButton()</slot>
+  <slot>PodcastsMainButton()</slot>
+  <slot>BackButton()</slot>
+ </slots>
+</ui>

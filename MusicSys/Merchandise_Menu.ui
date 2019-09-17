@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Merchandise_Menu</class>
+ <widget class="QDialog" name="Merchandise_Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Merchandise Menu</string>
+  </property>
+  <widget class="QLabel" name="Merchandise_MainMenuText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>331</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Merchandise</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Merchandise_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>300</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Merchandise_Logo">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>251</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="Merchandise_ViewButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>View Merchandise</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Merchandise_AddButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add Merchandise</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Merchandise_SearchButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search/Edit Merchandise</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Merchandise_SalesButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Merchandise Sales</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Merchandise_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Merchandise_Menu</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>106</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Merchandise_SalesButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Merchandise_Menu</receiver>
+   <slot>MerchandiseSales()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Merchandise_SearchButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Merchandise_Menu</receiver>
+   <slot>SearchMerchandise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>197</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>729</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Merchandise_AddButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Merchandise_Menu</receiver>
+   <slot>AddMerchandise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>585</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Merchandise_ViewButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Merchandise_Menu</receiver>
+   <slot>ViewMerchandise()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>144</x>
+     <y>521</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>MerchandiseSales()</slot>
+  <slot>AddMerchandise()</slot>
+  <slot>ViewMerchandise()</slot>
+  <slot>SearchMerchandise()</slot>
+ </slots>
+</ui>

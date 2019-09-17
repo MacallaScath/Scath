@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Music_Songs_Main</class>
+ <widget class="QDialog" name="Music_Songs_Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>251</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Songs Main</string>
+  </property>
+  <widget class="QPushButton" name="Songs_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>330</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SongMenu_Logo">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Songs_MainText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Songs</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>191</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="SongMenu_AddSongButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Add New Song</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="SongMenu_ViewSongsButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>View Songs</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="SongMenu_SearchSongsButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search/Edit Songs</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="SongMenu_SongSalesButton">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Song Sales</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>Songs_BackButton</zorder>
+  <zorder>SongMenu_Logo</zorder>
+  <zorder>Songs_MainText</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>SongMenu_AddSongButton</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SongMenu_AddSongButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Songs_Main</receiver>
+   <slot>AddSongButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>163</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Songs_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Songs_Main</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>83</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SongMenu_ViewSongsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Songs_Main</receiver>
+   <slot>ViewSongsButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SongMenu_SearchSongsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Songs_Main</receiver>
+   <slot>SearchSongsButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SongMenu_SongSalesButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Music_Songs_Main</receiver>
+   <slot>SongSalesButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>284</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>514</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>AddSongButton()</slot>
+  <slot>BackButton()</slot>
+  <slot>ViewSongsButton()</slot>
+  <slot>SearchSongsButton()</slot>
+  <slot>SongSalesButton()</slot>
+ </slots>
+</ui>
