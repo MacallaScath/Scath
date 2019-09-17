@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>People_Staff_View</class>
+ <widget class="QDialog" name="People_Staff_View">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>View Staff</string>
+  </property>
+  <widget class="QPushButton" name="ViewStaff_BackButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>320</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="StaffView_RefreshTableButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>290</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="StaffView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>541</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Album ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Album Title</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Publish Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Key Words</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Comments</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="Albums_MainMenuText">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>571</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Staff</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ViewStaff_BackButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Staff_View</receiver>
+   <slot>BackButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>533</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>StaffView_RefreshTableButton</sender>
+   <signal>clicked()</signal>
+   <receiver>People_Staff_View</receiver>
+   <slot>RefreshStaff()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>506</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>528</x>
+     <y>518</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BackButton()</slot>
+  <slot>RefreshStaff()</slot>
+ </slots>
+</ui>
